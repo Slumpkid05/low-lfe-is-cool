@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Low Life Is Cool</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+ body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(45deg, #405de6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F77737, #FCAF45, #FFDC80);
+  color: #eaeaea;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+{ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(11,11,11,0.95);
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: padding 0.3s ease;
+}
+
+nav a {
+  margin-left: 20px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  opacity: 1;
+}
+
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+ 
+img {
+   border-radius: 15px;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+p {
+  opacity: 0.85;
+}
+
+
+section {
+  padding: 120px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  width: 320px;
+  background: linear-gradient(45deg, #405de6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #f56040, #F77737, #FCAF45, #FFDC80);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.card img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #222;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal.show {
+  display: flex;
+}
+
+#closeModal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>LOW LIFE IS COOL</strong>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header id="home">
+  <h1>LOW LIFE IS COOL</h1>
+  <p>
+    <strong>
+      Plans don’t need witnesses<br>
+      Authenticity is everything<br><br>
+      Don’t let anyone know your next move
+    <div class="img">
+      <img src="IMG-20251126-WA0012.jpg" alt="">
+      <p><strong>we don't announce moves,</strong></p>
+      <p><strong>we excute them</strong></p>
+      <p class="price"><N1179 class="99"></N1249></N1179></p>
+    </div></strong>
+  </p>
+</header>
+
+<section id="shop">
+  <h2>Collection</h2>
+
+ <div class="grid">  <div class="card draw-border">
+      <img src="C:\Users\sheet\OneDrive\Documents\First project\pyt\IMG-20260504-WA0011.jpg" alt="Round neck">
+      <p><strong>Round Neck</strong></p>
+      <p>Dust Pink Edition</p>
+      <p class="price">N$179.99</p>
+    </div>
+
+    <div class="card draw-border">
+      <img src="IMG-20250415-WA0002.jpg" alt="Polo Shirt">
+      <p><strong>Polo Shirt</strong></p>
+      <p>All colors</p>
+      <p class="price">N$249.99</p>
+    </div>
+
+    <div class="card draw-border">
+      <img src="C:\Users\sheet\OneDrive\Documents\First project\pyt\IMG-20250320-WA0000.jpg" alt="Round Neck">
+      <p><strong>Round Neck</strong></p>
+      <p>Front print</p>
+      <p class="price">N$149.99</p>
+    </div>
+
+    <div class="card draw-border">
+      <img src="C:\Users\sheet\OneDrive\Documents\First project\pyt\IMG-20250418-WA0000.jpg" alt="Grey Hoodie">
+      <p><strong>Hoodies</strong></p>
+      <p>Front & Back Design</p>
+      <p class="price">N$449.99</p>
+    </div>
+
+    <div class="card draw-border">
+      <img src="C:\Users\sheet\OneDrive\Documents\First project\pyt\IMG-20250418-WA0001.jpg" alt="all colors">
+      <p><strong>Hoodies</strong></p>
+      <p>Front Design</p>
+      <p class="price">N$399.99</p>
+    </div>
+
+    <div class="card draw-border">
+      <img src="IMG-20250702-WA0040.jpg" alt="White T-Shirt">
+      <p><strong> T-Shirt</strong></p>
+      <p>Chess Statement Print</p>
+      <p class="price">N$179.99</p>
+    </div>
+  </div></div>
+  
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p style="text-align:center; max-width:720px; margin:auto;">
+    Low Life Is Cool was established in 2022 by <strong>Nghiwete Pendapala</strong>.
+    Built for people who move in silence, protect the vision, and let results speak.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center;">
+    Instagram:
+    <a href="https://instagram.com/low.life.is.cool" target="_blank">@low.life.is.cool</a>
+  </p>
+</section>
+
+<footer>
+  <p>© Low Life Is Cool. All Rigths Reserved.</p>
+  <p>Privacy Policy Terms of Service</p>
+</footer>
+
+
+<div class="modal" id="modal">
+  <span id="closeModal">&times;</span>
+  <img id="modalImg">
+</div>
+
+<script>
+
+const sections = document.querySelectorAll("section");
+sections.forEach(sec => {
+  sec.style.opacity = 0;
+  sec.style.transform = "translateY(40px)";
+  sec.style.transition = "all 0.8s ease";
+});
+
+const reveal = () => {
+  sections.forEach(sec => {
+    if (sec.getBoundingClientRect().top < window.innerHeight * 0.85) {
+      sec.style.opacity = 1;
+      sec.style.transform = "translateY(0)";
+    }
+  });
+};
+window.addEventListener("scroll", reveal);
+reveal();
+
+
+const navLinks = document.querySelectorAll("nav a");
+window.addEventListener("scroll", () => {
+  let pos = window.scrollY + 150;
+  navLinks.forEach(link => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+    link.classList.toggle(
+      "active",
+      pos >= target.offsetTop && pos < target.offsetTop + target.offsetHeight
+    );
+  });
+});
+
+
+const nav = document.querySelector("nav");
+window.addEventListener("scroll", () => {
+  nav.style.padding = window.scrollY > 60 ? "12px 40px" : "20px 40px";
+});
+
+
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const closeModal = document.getElementById("closeModal");
+
+document.querySelectorAll(".card img").forEach(img => {
+  img.addEventListener("click", () => {
+    modalImg.src = img.src;
+    modal.classList.add("show");
+  });
+});
+
+modal.addEventListener("click", (e) => {
+  if(e.target !== modalImg && e.target !== closeModal) modal.classList.remove("show");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("show");
+});
+
+document.querySelectorAll("img").forEach(img => {
+  img.onerror = () => {
+    console.warn("Missing image:", img.src);
+    img.style.opacity = 0.3;
+  };
+});
+</script>
+
+</body>
+</html>
